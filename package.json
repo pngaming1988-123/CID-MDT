@@ -1,0 +1,19 @@
+{
+  "name": "cid-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Detective MDT as a standalone website (ported from ER-DetectiveMDT)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "set-grade": "node --env-file-if-exists=.env scripts/set-grade.js"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.11.0",
+    "sanitize-html": "^2.13.0"
+  }
+}
